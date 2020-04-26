@@ -94,11 +94,12 @@
 	    <br>
 	  </br>
 	  d)<button  onclick="doing()">MI</button>
+       	    <button onclick="submit()" style="background-color:blue;">submit</button>
        <Script>
 	   
-	    function doing()
+	   /* function doing()
 		{
-		// document.write("correct answer").style.color='green';
+		// document.write(("correct 00answer").style.color='green';))
 		 //x.style.color='green';
 	      alert("correct answer");
 		  //document.getElementById("lipun").style.color='green';
@@ -108,11 +109,46 @@
 		 //var y=document.write("wrong answer")
 		 //y.style.color='red';
 		 alert("wrong answer");
-		}
-	   function next()
-	   {
-	    
-	   }
+		}*/
+	     var count=0;
+    function doing()
+     {
+      count++;
+	 // alert(count);
+     }
+	 function submit()
+	 {
+	  if(count==1 || count==2 || count==3 )
+	  {
+	   document.write("Nice Try");
+	    document.write("<br/>");
+	   document.write("you have correct"+" "+count+" "+"out of"+" "+"8");
+	  }
+	  else if(count==4 || count==5)
+	  {
+	 document.write("Good!");
+	  document.write("<br/>");
+	   document.write("you have correct"+" "+count+" "+"out of"+" "+"8");
+	  }
+	  else if(count==4 || count==5)
+	  {
+	   document.write("Excellent!");
+	   document.write("<br/>");
+	   document.write("you have correct"+" "+count+" "+"out of"+" "+"8");
+	  }
+	  else if(count==8)
+	  {
+	   document.write("Well done!");
+	    document.write("<br/>");
+	   document.write("you know Lipun very well");
+	  }
+	  else if(count==0)
+	  {
+	   alert("Sry you don't know anything about lipun")
+	    <"/br">
+	   alert("Try again")
+	  }
+	 }
 		</Script>
     </body>
 </html>
